@@ -19,9 +19,9 @@ export default function Layout({
             <li>Contact</li>
           </ul>
           <div className="flex gap-2">
-            <img src="/icon-github.svg" alt="icon de github"  width={30}
+          <Image src="/icon-github.svg" alt="icon de github"  width={30}
             height={30}/>
-            <img src="/icon-linkdin.svg" alt="icon de linkdin" width={30}
+          <Image src="/icon-linkdin.svg" alt="icon de linkdin" width={30}
             height={30} />
           </div>
         </header>
