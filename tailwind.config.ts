@@ -11,7 +11,19 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gray: "#666666",
+        blue: "#42446E"
       },
+      backgroundImage: {
+        'text-gradient': 'linear-gradient(to right, #F093FB 3%, #F5576C 100%)',
+      },
+      fontFamily: {
+        sans: ['DM Sans', 'Arial', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      fontSize: {
+        xl: '58px'
+      }
     },
   },
   plugins: [],
