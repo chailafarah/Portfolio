@@ -1,4 +1,5 @@
 import "./globals.css";
+import Image from 'next/image';
 
 export default function Layout({
   children,
@@ -9,7 +10,7 @@ export default function Layout({
     <html lang="en">
       <body>
         <header className="flex justify-between items-start container mx-auto mt-8">
-          <img src="/Logo.svg" alt="Logo" width={100} height={50}></img>
+        <Image src="/Logo.svg" alt="Logo" width={100} height={50} />
           <ul className="list-none flex gap-6 font-sans text-lg text-gray">
             <li>Home</li>
             <li>About</li>
