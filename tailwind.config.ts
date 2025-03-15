@@ -12,7 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         gray: "#666666",
-        blue: "#42446E"
+        blue: "#42446E",
       },
       backgroundImage: {
         'text-gradient': 'linear-gradient(to right, #F093FB 3%, #F5576C 100%)',
@@ -26,5 +26,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 } satisfies Config;
