@@ -52,7 +52,7 @@ const ProjectsSection = () => {
   return (
     <section className="text-center mt-[80px]">
       <h2 className="text-corn-flower-blue text-4xl font-bold">Projects</h2>
-      <p className="text-dim-gray mb-8">Exploration et création à travers mes projets</p>
+      <p className="text-dim-gray mb-8">Un parcours de création où chaque projet est une aventure, pleine de découvertes et de développements passionnants.</p>
 
       <div>
         {projects.map((project, index) => (
@@ -99,8 +99,8 @@ export default function Home() {
       </header>
 
       <section className="text-center">
-        <h1 className="text-corn-flower-blue text-4xl font-bold">Technos récentes</h1>
-        <p className="text-dim-gray mb-8">Technologies I’ve been working with recently</p>
+        <h1 className="text-corn-flower-blue text-4xl font-bold">Technologies récentes</h1>
+        <p className="text-dim-gray mb-8">Technologies avec lesquelles j'ai récemment travaillé, explorant de nouvelles possibilités pour innover et avancer.</p>
 
         <div className="grid grid-cols-3 md:grid-cols-6 gap-12 md:w-[900px] mx-auto place-items-center">
           {["html", "css", "javascript", "drupal", "github", "bootstrap", "tailwind", "react", "NextJs", "sass", "php", "jira", "figma", "angular", "jquery", "docker"].map((tech) => (
