@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <div className="container px-4 mx-auto">
       <header className="md:flex md:flex-row-reverse md:items-center md:justify-between mt-8 md:mt-24 mb-16">
-        <Image className="mb-4 w-[200] md:w-[349]" src="bannerimage.svg" alt="bannerimage" width={349} height={349} />
+        <Image className="mb-4 w-[200] md:w-[349]" src="/bannerimage.svg" alt="bannerimage" width={349} height={349} />
 
         <h1 className="text-corn-flower-blue text-3xl md:text-6xl font-bold leading-[1.20]">
           <span className="block">Bonjour👋,</span>
