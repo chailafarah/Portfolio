@@ -51,7 +51,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section className="text-center mt-[80px]">
-      <h2 className="text-corn-flower-corn-flower-blue text-4xl font-bold">Projects</h2>
+      <h2 className="text-corn-flower-blue text-4xl font-bold">Projects</h2>
       <p className="text-dim-gray mb-8">Exploration et création à travers mes projets</p>
 
       <div>
