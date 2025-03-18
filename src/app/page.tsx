@@ -8,7 +8,7 @@ const projects = [
     description:
       "Manage Pass est une application sécurisée pour la gestion des mots de passe, permettant aux utilisateurs de stocker et gérer facilement leurs identifiants.",
     techs: ["Kotlin", "Android Studio", "Firebase", "Figma",],
-    thumbnail: "ManagePassAndroid.png",
+    thumbnail: "/thumbnails/ManagePassAndroid.png",
     figmaLink: "https://www.figma.com/design/CGJMt8hGIVfcnMVYJUHCL4/App-Mobile?node-id=0-1&p=f&t=Q2jgNdjWgKxx7Jxe-0",
     githubLink: "https://github.com/chailafarah/ManagePassaAndroid",
   },
@@ -17,7 +17,7 @@ const projects = [
     title: "ManagePass Application Web",
     description: "Manage Pass est une application sécurisée pour la gestion des mots de passe, permettant aux utilisateurs de stocker et gérer facilement leurs identifiants.",
     techs: ["Angular", "TypeScript", "Html", "Tailwind CSS", "Firebase", "Angular Toastr",],
-    thumbnail: "ManagePassWeb.png",
+    thumbnail: "/thumbnails/ManagePassWeb.png",
     githubLink: "https://github.com/chailafarah/ManagePass?tab=readme-ov-file",
     livePreviewLink: "https://poce-my.sharepoint.com/personal/chaimaa_faris_edu_ece_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fchaimaa%5Ffaris%5Fedu%5Fece%5Ffr%2FDocuments%2FAttachments%2FCap%202025%2D01%2D09%20at%2016%2E34%2E03%2Emp4&ct=1741616416850&or=OWA%2DNT%2DMail&cid=06eafb9e%2D5bcb%2D100b%2D9fd9%2Dc9ff89032f26&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E60c0587c%2D4399%2D46b3%2D8eee%2Dde4a5f4b0140",
   },
@@ -26,7 +26,7 @@ const projects = [
     title: "Toronto Website - UX/UI Redesign",
     description: "Refonte UX/UI du site de Toronto avec une nouvelle conception moderne et intuitive pour améliorer l'expérience utilisateur et l'accessibilité.",
     techs: ["Figma"],
-    thumbnail: "Toronto-Cupcakes.png",
+    thumbnail: "/thumbnails/Toronto-Cupcakes.png",
     figmaLink: "https://www.figma.com/proto/X0JXkOY3uYzdb7YKLHECku/ux-ui?node-id=109-92&t=FTBhCAZkP6DUvnmP-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=109%3A92",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     title: "Portfolio - UX/UI & Development",
     description: "Conception UX/UI et développement de mon portfolio personnel. Design réalisé sur Figma, puis développé avec Next.js, React et Tailwind CSS pour un style moderne et responsive.",
     techs: ["Figma", "React", "Next.js", "Tailwind CSS", "daisyUI",],
-    thumbnail: "Portfolio.png",
+    thumbnail: "/thumbnails/Portfolio.png",
     figmaLink: "https://www.figma.com/design/DkIo0n76OfwANnHyTCmYM1/Untitled?node-id=0-1&p=f&t=dKtoB5kok3JJX9lG-0",
     githubLink: "https://github.com/chailafarah/Portfolio",
   },
@@ -43,14 +43,14 @@ const projects = [
     title: "Application SuiviBudget",
     description: "SuiviBudget c'est une application web qui vous permet de suivie votre budget.",
     techs: ["Figma", "React", "Next.js", "Tailwind CSS", "daisyUI", "Node.js", "Recharts", "MySQL",],
-    thumbnail: "SuiviBudget.png",
+    thumbnail: "/thumbnails/SuiviBudget.png",
     figmaLink: "https://www.figma.com/proto/Y4TER89lrw8svQD2WNtNuF/SuiviBudget?node-id=101-1285&t=gMxvwWPY4jYfaZSd-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=101%3A1285&show-proto-sidebar=1",
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section className="text-center mt-[80px]">
+    <section className="text-center mt-[80px] leading-8">
       <h2 className="text-corn-flower-blue text-4xl font-bold">Projects</h2>
       <p className="text-dim-gray mb-8">Un parcours de création où chaque projet est une aventure, pleine de découvertes et de développements passionnants.</p>
 
@@ -64,8 +64,9 @@ const ProjectsSection = () => {
               }
             )}>
             <div className="md:relative md:-my-8 md:p-2.5 md:w-7/12 shrink-0">
-              <img
+              <Image
                 src={project.thumbnail}
+                width={1920} height={1080}
                 alt={`Thumbnail de l'application ${project.title}`}
                 className="h-full w-full rounded-md md:rounded-lg object-cover"
               />
@@ -98,7 +99,7 @@ export default function Home() {
         </h1>
       </header>
 
-      <section className="text-center">
+      <section className="text-center leading-8">
         <h1 className="text-corn-flower-blue text-4xl font-bold">Technologies récentes</h1>
         <p className="text-dim-gray mb-8">Technologies avec lesquelles j'ai récemment travaillé, explorant de nouvelles possibilités pour innover et avancer.</p>
 
@@ -106,7 +107,7 @@ export default function Home() {
           {["html", "css", "javascript", "drupal", "github", "bootstrap", "tailwind", "react", "NextJs", "sass", "php", "jira", "figma", "angular", "jquery", "docker"].map((tech) => (
             <Image
               key={tech}
-              src={`/${tech}.svg`}
+              src={`/techs/${tech}.svg`}
               alt={`${tech} skills`}
               width={60}
               height={60}
