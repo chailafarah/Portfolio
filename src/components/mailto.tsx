@@ -11,7 +11,8 @@ export function Mailto() {
         headers={{
           subject: 'Petit bonjour !',
         }}>
-        <Image className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="/logo.svg" alt="Logo" width={100} height={25} />
+        <Image className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 dark:hidden" src="/logo.svg" alt="Logo" width={100} height={25} />
+        <Image className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="/LogoDark.png" alt="Logo" width={100} height={25} />
       </Obfuscate>
     </div>
   )

@@ -50,8 +50,8 @@ const projects = [
 export function Projects() {
   return (
     <section className="text-center mt-[80px]">
-      <h2 className="text-corn-flower-blue text-4xl font-bold">Projects</h2>
-      <p className="text-dim-gray mt-2 mb-8">Un parcours de création où chaque projet est une aventure, pleine de découvertes <br/>et de développements passionnants.</p>
+      <h2 className="text-corn-flower-blue text-4xl font-bold dark:text-white">Projects</h2>
+      <p className="text-dim-gray mt-2 mb-8 dark:text-gray-400">Un parcours de création où chaque projet est une aventure, pleine de découvertes <br/>et de développements passionnants.</p>
 
       <div>
         {projects.map((project, index) => (
@@ -72,9 +72,9 @@ export function Projects() {
             </div>
 
             <div className="p-6 md:p-12">
-              <h4 className="mb-2 text-slate-800 text-3xl font-semibold">{project.title}</h4>
-              <p className="mb-8 text-slate-600 leading-normal font-light text-sm">{project.description}</p>
-              <p className="mb-8 text-corn-flower-blue text-xs">Technologies : {project.techs.join(", ")}</p>
+              <h4 className="mb-2 text-slate-800 text-3xl font-semibold dark:text-white">{project.title}</h4>
+              <p className="mb-8 text-slate-600 leading-normal font-light text-sm dark:text-white">{project.description}</p>
+              <p className="mb-8 text-corn-flower-blue text-xs dark:text-white">Technologies : {project.techs.join(", ")}</p>
               <div className="gap-3 inline-flex flex-col">
                 {project.figma && (
                   <a className="gap-2 inline-flex items-center justify-center rounded-full px-8 py-1 ring-1 ring-gray-950/10 hover:ring-gray-950/20" href={project.figma} target="_blank">

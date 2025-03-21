@@ -20,8 +20,8 @@ const techs = [
 export function Techs() {
   return (
     <section className="text-center">
-      <h1 className="text-corn-flower-blue text-4xl font-bold">Technologies récentes</h1>
-      <p className="text-dim-gray mt-2 mb-8">Technologies avec lesquelles j&apos;ai récemment travaillé, explorant de nouvelles <br/>possibilités pour innover et avancer.</p>
+      <h1 className="text-corn-flower-blue dark:text-white text-4xl font-bold">Technologies récentes</h1>
+      <p className="text-dim-gray dark:text-gray-400 mt-2 mb-8">Technologies avec lesquelles j&apos;ai récemment travaillé, explorant de nouvelles <br/>possibilités pour innover et avancer.</p>
 
       <div className="grid grid-cols-3 md:grid-cols-6 gap-12 md:max-w-[900px] mx-auto place-items-center">
         {techs.map((tech) => (
