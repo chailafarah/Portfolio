@@ -23,7 +23,7 @@ export function Techs() {
       <h1 className="text-corn-flower-blue dark:text-white text-4xl font-bold">Technologies récentes</h1>
       <p className="text-dim-gray dark:text-gray-400 mt-2 mb-8">Technologies avec lesquelles j&apos;ai récemment travaillé, explorant de nouvelles <br/>possibilités pour innover et avancer.</p>
 
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-12 md:max-w-[900px] mx-auto place-items-center">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-12 md:max-w-[900px] mx-auto place-items-center transition delay-150 duration-300 ease-in-out">
         {techs.map((tech) => (
           <a key={tech} href={`https://github.com/topics/${tech}`} target="_blank">
             <Image
